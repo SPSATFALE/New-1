@@ -146,10 +146,27 @@ footer .footer-contact p {
         text-align: center;
     }
 
-    footer .footer-logo, footer .footer-links, footer .footer-contact {
+    footer .footer-logo, footer .footer-links, footer .footer-contact , footer .copyright{
         margin-bottom: 1.5rem;
     }
+    header .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
+@media (max-width: 768px) {
+    section .gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+    }
+
+
+
+
 
 .div2{
     background-color: white;
@@ -237,26 +254,10 @@ footer .footer-contact p {
     margin: 0px;
     padding: 1.5rem;
 }
-.teachers .container1{
-    display: flex;
-    justify-content: center;
-}
-.teachers .left1 {
-    width: 40%;
-    text-align: left;
-}
-.teachers video{
-    max-width: 300px;
-    height: 250px;
-    margin: 1%;
-    border: solid 3px #0600ff;
-    border-radius: 5px;
-}
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
     gap: 15px;
     max-width: 80%;
     margin: auto;
@@ -296,12 +297,14 @@ footer .footer-contact p {
 }
 h3{
     font-weight: bold;
-    font-size: x-large;
+    font-size: xxx-large;
+    margin-top: unset;
 }
 h4{
-    color: #ffd921;
-    font-family: cursive;
+    color: #e8c000;
     font-style: italic;
+    font-family: cursive;
+    margin-bottom: unset;
 
 }
 .course-cards button{
@@ -312,7 +315,7 @@ h4{
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
-    max-width: 110px;
+    width: 100%;
 }
 
 .card {
@@ -324,7 +327,7 @@ h4{
     background-color: #ffffff;
     padding: 1rem;
     display: flex;
-    align-items: center;
+    text-align: left;
     border-radius: 10px;
     margin-top: -50px;
     max-width: 250px;
@@ -332,6 +335,11 @@ h4{
     transform: translateX(10px);
     box-shadow: 1px 1px 7px 0px;
 }
+
+section.teachers {
+    display: unset;
+}
+
 
 .teachers button {
     background-color: blue;
@@ -341,6 +349,17 @@ h4{
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.left1 {
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+.teachers video{
+    max-width: 40%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px 1px;
 }
 
 .testimonials .testimonial {
