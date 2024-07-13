@@ -355,11 +355,13 @@ section.teachers {
     float: left;
     width: 40%;
     text-align: left;
+    margin: 5%;
 }
 .teachers video{
     max-width: 40%;
     border-radius: 5px;
     box-shadow: 1px 1px 7px 1px;
+    margin: 5%;
 }
 
 .testimonials .testimonial {
